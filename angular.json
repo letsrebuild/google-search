@@ -15,7 +15,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/apps/google-search",
+            "outputPath": "docs/",
             "index": "apps/google-search/src/index.html",
             "main": "apps/google-search/src/main.ts",
             "polyfills": "apps/google-search/src/polyfills.ts",
