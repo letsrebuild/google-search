@@ -1,0 +1,22 @@
+.header {
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+
+    .action-links {
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+
+        a {
+            padding: 0 6px;
+            text-decoration-line: none;
+            font-size: 14px;
+        }
+
+        i {
+            padding: 0 6px;
+            cursor: pointer;
+        }
+    }
+}
