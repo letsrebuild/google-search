@@ -1,0 +1,23 @@
+.footer {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    background: #f2f2f2;
+    border-top: 1px solid #dadce0;
+    font-size: 14px;
+    align-items: center;
+
+    .left {
+        
+    }
+
+    .right {
+
+    }
+
+    a {
+        text-decoration-line: none;
+        margin: 0 5px;
+    }
+}
