@@ -15,4 +15,13 @@ export class DictionaryService {
         return result.id as string;
     }
 
+    async searchText(query: string) {
+        const results = await this.dictionaryModel.aggregate([
+            {$search: {"autocomplete": {"path": "word", "query": query, "tokenOrder": "any"}}},
+            {$project: {_id: 0, word: 1}},
+            {$limit: 5}
+        ]);
+        return results;
+    }
+
 }
