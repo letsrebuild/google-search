@@ -2,11 +2,20 @@
     <img src="assets/search-logo.png" alt="">
     <div class="input-with-icon">
         <i class="material-icons search">search</i>
-        <input type="text">
+        <input type="text" 
+        #searchInputField 
+        (keyup.enter)="clicked(searchInputField.value)"
+        [class.searching]="searchResults.length">
+        <div *ngIf="searchResults.length" class="suggestions-container">
+            <div (click)="clicked(searchResult.innerText)" class="suggestion" *ngFor="let result of searchResults">
+                <i class="material-icons search-res">search</i> 
+                <span #searchResult>{{result}}</span>
+            </div>
+        </div>
         <i class="material-icons mic">mic</i>
     </div>
     <div class="buttons">
-        <button>
+        <button (click)="clicked(searchInputField.value)">
             Search
         </button>
         <button>

@@ -22,13 +22,44 @@
             height: 100%;
             font-size: 16px;
             overflow: hidden;
-            border-radius: 50px;
+            border-radius: 25px;
             border: 1px solid #dfe1e5;
+        }
+
+        input.searching {
+            border-radius: 25px 25px 0 0;
         }
 
         input:focus, input:active, input:hover {
             outline: none;
             box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.2);
+        }
+
+        .suggestions-container {
+            width: 458px;
+            border: 1px solid #dfe1e5;
+            position: relative;
+            z-index: 19;
+            background: white;
+            padding-top: 2px;
+            border-radius: 0 0 25px 25px;
+            box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.2);
+
+            .suggestion {
+                display: flex;
+                align-items: center;
+                padding: 5px 0 5px 16px;
+                cursor: pointer;
+
+                i {
+                    color: #00000085;
+                }
+
+                span {
+                    padding-left: 14px;
+                    font-size: 15px;
+                }
+            }
         }
 
         i.search {

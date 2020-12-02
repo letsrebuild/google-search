@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  backend: 'http://localhost:3333/api/dictionary/search/'
+  backend: 'http://localhost:3333/api/dictionary/search/',
+  googleSearchApi: 'https://www.google.com/search?q=',
+  googleDoodle: 'https://www.google.com/doodles/'
 };
 
 /*

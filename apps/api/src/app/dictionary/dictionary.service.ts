@@ -11,7 +11,6 @@ export class DictionaryService {
     async insertWord(word: string) {
         const newWord = new this.dictionaryModel({word});
         const result = await newWord.save();
-        console.log(result);
         return result.id as string;
     }
 
