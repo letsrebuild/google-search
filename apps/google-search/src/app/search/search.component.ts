@@ -48,11 +48,15 @@ export class SearchComponent implements OnInit, AfterViewInit {
   searchResults = [];
   @ViewChild('searchInputField') searchField: ElementRef;
 
-  clicked(text: string) {
+  clickedSearch(text: string) {
     if(!text) return;
     this.searchField.nativeElement.value = text;
     this.searchResults = [];
     this.searchService.navigateTo(`${environment.googleSearchApi}${encodeURI(text)}`);
+  }
+
+  clickedDoodle() {
+    this.searchService.navigateTo(environment.googleDoodle);
   }
 
 }

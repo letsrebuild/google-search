@@ -4,10 +4,10 @@
         <i class="material-icons search">search</i>
         <input type="text" 
         #searchInputField 
-        (keyup.enter)="clicked(searchInputField.value)"
+        (keyup.enter)="clickedSearch(searchInputField.value)"
         [class.searching]="searchResults.length">
         <div *ngIf="searchResults.length" class="suggestions-container">
-            <div (click)="clicked(searchResult.innerText)" class="suggestion" *ngFor="let result of searchResults">
+            <div (click)="clickedSearch(searchResult.innerText)" class="suggestion" *ngFor="let result of searchResults">
                 <i class="material-icons search-res">search</i> 
                 <span #searchResult>{{result}}</span>
             </div>
@@ -15,10 +15,10 @@
         <i class="material-icons mic">mic</i>
     </div>
     <div class="buttons">
-        <button (click)="clicked(searchInputField.value)">
+        <button (click)="clickedSearch(searchInputField.value)">
             Search
         </button>
-        <button>
+        <button (click)="clickedDoodle()">
             Show me anything!
         </button>
     </div>
