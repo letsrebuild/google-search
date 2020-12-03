@@ -1,6 +1,6 @@
 # LetsRebuild
 
-![Alt text](apps/google-serch/src/assets/snap.png "Screenshot")
+![Alt text](https://raw.githubusercontent.com/letsrebuild/google-search/main/apps/google-search/src/assets/snap.png "Screenshot")
 
 This project is a rebuild of Google search engine. The only purpose of this repository is to be an education content to budding web developers.
 
