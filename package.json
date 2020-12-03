@@ -8,6 +8,7 @@
     "nx": "nx",
     "start": "node dist/apps/api/main.js",
     "build": "nx build api --prod",
+    "build-gh-pages": "nx build google-search --prod --base-href https://letsrebuild.github.io/google-search/",
     "test": "ng test",
     "lint": "nx workspace-lint && ng lint",
     "e2e": "ng e2e",
